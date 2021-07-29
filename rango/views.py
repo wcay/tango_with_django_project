@@ -56,7 +56,7 @@ def add_category(request):
 def add_page(request, category_name_slug):
 
     try:
-        cat = Category.objects.get(slug=category_name_slug)
+        category = Category.objects.get(slug=category_name_slug)
     except Category.DoesNotExist:
          category = None
 
